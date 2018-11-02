@@ -1,0 +1,328 @@
+/* globle */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'montserrat';
+    line-height: 1.5;
+    width: 100%;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* navigation and main section */
+.main-sec{
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.head{
+    background-attachment: fixed;
+    overflow: hidden;
+    background-image: url(./img/headimg.png);
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+    background-position-x: 690px;
+    width: 100%;
+    height: 800px;
+    background-size: 740px 850px;
+}
+.info-con{
+    font-weight: bold;
+    color: #00B1FF;
+    line-height: 2.0;
+    margin: 5em 0 0 0;
+    text-align: justify;
+    width: 550px;
+    height: 200px;
+    font-size: 28px;
+}
+.get-btn{
+    margin-top: 1em;
+    text-align: center;
+}
+.get-btn button{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #00B1FF;
+    background-color: black;
+    border: 2px solid #00B1FF ;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 5px 1px gray;
+}
+.get-btn button:hover{
+    transform: scale(1.03);
+}
+
+/* showcase-1 */
+.bar{
+    margin-bottom: 4em;
+}
+.bar img{
+    width: 800px;
+    height: 16px;
+}
+
+.team-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sec-1{
+    background-image: url(./img/teamimg.png);
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: -150px;
+
+}
+h2{
+    color: #fff;
+}
+.content{
+    padding: 0;
+    color: #00B1FF;
+    font-weight: 500;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 6em;
+}
+
+.sec-1{
+    margin-bottom: 4em;
+}
+
+.team-sec{
+    margin-top: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 30px;
+
+}
+.team-card img{
+    width: 90px;
+    height: 90px;
+}
+.team-card{
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+
+.team-card p{
+    color: #00B1FF;
+}
+
+/* Price section */
+
+.price-text{
+    text-align: center;
+    font-size: 34px;
+    color: #00B1FF;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+.price-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.price-table ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.price-table{
+    position: relative;
+    z-index: 10;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    margin: 1em;
+    background: #fff;
+    box-shadow: 1px 2px 5px 2px rgb(209, 209, 209);
+    border-radius: 20px;
+}
+.price-table .price-head{
+    padding: 50px;
+    background: linear-gradient(45deg, #f321d6, #5121f3);
+    border-radius: 0 0 50% 50% ;
+}
+
+.price-table .price-btn{
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
+.price-table .price-btn button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font: bolder;
+    color: #fff;
+    background: linear-gradient(45deg, #f321d6, #5121f3);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.price-table .price-btn button:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* price section end */
+
+/* about section */
+.about-div{
+    position: relative;
+
+    box-shadow: 1px 2px 5px 2px rgb(209, 209, 209);
+}
+
+.about-content {
+    padding: 20px;
+    color: #00B1FF;
+}
+
+.about-titel{
+    text-align: center;
+}
+
+.about-showcase{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+}
+
+.showcase-text{
+    text-align: justify;
+    padding: 5px;
+    font-size: 26px;
+}
+
+.showcase-slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.slide-box{
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    margin-left: 2em;
+}
+
+.slide-box img{
+    vertical-align: middle;
+    width: 600px;
+    height: 400px;
+}
+
+.show-slide{
+   display: none;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/* footer section */
+
+.footer-div{
+    border-top: 5px solid #ff9f03;
+    margin: 1em;
+    background-color:  #0D2047;
+    position: relative;
+}
+.footer-text{
+    color: #fff;
+}
+.nav{
+    padding: 2em;
+}
+.footer-content .nav ul li{
+    display: inline-block;
+    padding: 15px;
+}
+.footer-content .nav ul li a{
+    padding: 10px;
+    color: #fff;
+    transition: 1s;
+    border-radius: 20px;
+}
+.footer-content .nav ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+.copy-sec{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
